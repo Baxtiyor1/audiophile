@@ -1,0 +1,148 @@
+.headphones{
+    background-color: #000;
+    &__title{
+        margin: 0;
+        padding: 98px 0;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 1.42857px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #000;
+    }
+    &__menu{
+        margin-top: 160px;
+        list-style-type: none;
+    }
+    &__link{
+        display: inline-block;
+        padding: 15px 31px;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #D87D4A;
+        &:hover{
+            background-color:#FBAF85;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 1110px;
+        max-width: 100%;
+        margin-bottom: 160px;
+        &:nth-child(2){
+            flex-direction: row-reverse;
+        }
+        &--news{
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: #D87D4A;
+        }
+        &--aside{
+            padding: 65px 95px 108px;
+            width: 540px;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+        }
+        &--bside{
+            width: 445px;
+            max-width: 100%;
+        }
+        &--title{
+            margin: 16px 0 32px;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+        }
+        &--text{
+            margin-bottom: 40px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+    &__bring{
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .headphones{
+        &__menu{
+            margin-top: 120px;
+        }
+        &__item{
+            margin-bottom: 120px;
+            width: 689px;
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+            &:nth-child(2){
+                flex-direction: column;
+            }
+            &--news{
+                margin-bottom: 16px;
+            }
+            &--aside{
+                margin-bottom: 52px;
+                width: 100%;
+                padding: 41px 0 68px;
+            }
+            &--bside{
+                width: 572px;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &--title{
+                margin-top: 0;
+                text-align: center;
+            }
+            &--text{
+                margin-bottom: 24px;
+                text-align: center;
+            }
+        }
+        &__bring{
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .headphones{
+        &__title{
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: 2px;
+        }
+        &__menu{
+            margin-top: 64px;
+        }
+        &__item{
+            &--title{
+                font-size: 28px;
+                line-height: 38px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
